@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Patua One', cursive;
+}
+.img-icon{
+    width: 500px;
+    height: 500px;
+}

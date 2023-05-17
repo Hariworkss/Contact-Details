@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col ">
+            <h1 class="text-success text-center">View Your  Contact</h1>
+            <p style="text-align: justify;">Contact management, a digital method of storing data, can help you grow and diversify your customer base. As your business grows, it will get more challenging to collect data and determine which information is valuable to you, your employees and your company’s sustainability.
+
+                But who has time to input all of this information manually? Fortunately, contact management software can automatically collect and analyze data from purchases, marketing campaigns and previous conversations.</p>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="container">
+        <div class="row">
+            <!-- form col -->
+            <div class="col-6">
+
+                <!-- <pre>
+                    {{contactId|json}}
+                </pre> -->
+
+                <!-- complete data of contacts -->
+                <ul class="list-group">
+                    <h1 class="ps-3">Contact Details</h1>      <!--contact have all data-->
+                    <li class="list-group-item">Name:{{contact.name}}        <!--data passed using string interpolation-->
+                    </li>
+                    <li class="list-group-item">Email:{{contact.email}}        
+                    </li>
+                    <li class="list-group-item">Mob no:{{contact.phone}}        
+                    </li>
+                    <li class="list-group-item">Company Name:{{contact.company}}        
+                    </li>
+                    <li class="list-group-item">Title: {{contact.titles}}        
+                    </li>
+                    <li class="list-group-item">Group: {{groupName}}        
+                    </li>
+                  </ul>
+                  <a routerLink="/" class="btn btn-danger mt-2 ms-2 mt-2" style="float: right;">Go Back</a>
+
+            </div>
+            <div class="col-6">
+                <img class="img-icon ms-5" [src]="contact.photo" alt="">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.maindiv{
+    margin-top: 70px;
+    text-shadow: 2px 2px 25px ;
+}
+.image404{
+    box-shadow: 2px 2px 30px ;
+    margin-top: 70px;
+}
+.panel{
+    margin-top: 40px;
+    background-color: rgb(3, 3, 77);
+  padding-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px rgb(4, 62, 103);
+}
+.container{
+    padding-bottom: 30px;
+}

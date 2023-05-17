@@ -1,0 +1,58 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Hari",
+      "email": "hari@gmail.com",
+      "phone": "9898989889",
+      "photo": "https://cdn-icons-png.flaticon.com/512/4128/4128176.png",
+      "company": "XYZ company",
+      "titles": "HR",
+      "groupId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Jacky",
+      "email": "jacky@gmail.com",
+      "phone": "9112121313",
+      "photo": "https://cdn-icons-png.flaticon.com/512/219/219983.png",
+      "company": "XYZ company",
+      "titles": "Designer",
+      "groupId": "1"
+    },
+    {
+      "id": "3",
+      "name": "Kalyani",
+      "email": "kalyani@gmail.com",
+      "phone": "6136524245",
+      "photo": "https://thumbs.dreamstime.com/b/female-user-icon-business-suit-vector-illustration-female-user-icon-business-suit-vector-illustration-white-background-233703571.jpg",
+      "company": "XYZ company",
+      "titles": "Developer",
+      "groupId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Vikram",
+      "email": "vikram@gmail.com",
+      "phone": "9898989889",
+      "photo": "https://cdn-icons-png.flaticon.com/512/194/194935.png",
+      "company": "none",
+      "titles": "none",
+      "groupId": "2"
+    }
+  ],
+  "group": [
+    {
+      "id": "1",
+      "name": "family"
+    },
+    {
+      "id": "2",
+      "name": "company"
+    },
+    {
+      "id": "3",
+      "name": "friends"
+    }
+  ]
+}

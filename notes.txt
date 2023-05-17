@@ -1,0 +1,124 @@
+                                        Contact Mnagement System
+
+BASIC COMMANDS
+1 create a new project- ng new contact_details
+2 To run a project - ng serve --open
+3 create a new component- ng g c comp_name
+4 create a service - ng g s service_name
+5 create pipe for  search - ng g p pipe_folder/pipe_name
+
+COMMANDS AFTER PROJECT CREATION
+1 create a new project- ng new contact_details
+2 cd contact_details   //to come to folders
+3 code .
+4 to run project on web - ng serve --open
+5 install - bootstrap ,fontswesome and google font in angular.json           //also paste cdn links in html 
+   ->npm i bootstrap
+   ->npm i @fortawesome/fontawesome-free
+
+BASIC BUILDING BLOCKS
+1 Module - used to add 3rd party libraries
+2 component - to create html pages(html,css,ts)
+3 Selector - Used to replace the html corresponding to the component
+4 Services - reusable codes that can be shared b/w components
+5 Asynchronous function rxjs
+6. dependancy Injection- data share between two dependant classes
+
+7 Create components needed
+   ->contactManager - To view & manage all components
+      ng g c contactManager
+
+   ->addContact - to add new contact
+      ng g c addContact
+
+   ->updateContact - to update contact
+         ng g c updateContact
+         
+   ->viewContact - to view a particular contact
+         ng g c viewContact
+   ->page not found 
+   ->navbar component and design
+   ->contact manager page design
+   >addcontact design
+   >view contact & design
+   >page not found & design
+   >updatepage & design
+   >addpage & design  
+
+   8. API CREATION
+   create own JSON file
+     -go to json placeholder site- create myjson server  copy content paste  in db.json
+
+   9. create server folder for backend
+         -create server folder in the project- /src/server-folder  
+         -create db-json file in server folder
+               >add own content to db.json file
+
+   10. In server folder create package.json and node_modules inside >server  //which are essential default for backend
+         ->create package.json file - npm init  // in that give fill description,keywords , author //press enter for rest of them
+         ->create json server - npm i json-server  //link for json file to fetch
+         ->give command npm start   // if error - >package.json-"scripts": {
+                                                                    "start":"json-server --watch db.json --port 3000"
+                                                                            }
+                                                                  // try again ->npm start
+   11. Create a model for contact and group
+            -create model folder in >src folder
+            -create myContact.ts
+            -create myGroup.ts 
+
+   12. to fetch data - Asynchronous resolving
+            JSON                    TS 
+         promise                 observable
+         fetch('url')            //rxjs library
+         .then()----------------- .subscribe()  
+
+
+   13. API creation 
+            eg:view contact
+               update contact      
+   14 Services creation
+      pass data from one component to another //if components share same data            
+
+      ng g s Services/api
+
+   15 To  get http methods - get,post,(put,patch),delete
+            import HttpClient in app.module.ts          // import{HttpClientModule}from '@angular/common/http'
+
+
+   16 Dependency inject httpclient in API services
+
+   17 Data Binding
+          Data sharing inside a component
+
+          Html(view)  -> ts(component)
+
+      1)One way data Binding
+        a)component to view (ts->html)
+                 i)String interpolation - {{variable_name}}            //in html(view) <pre> {{var_name}}
+                ii)Property Binding - [attribute]="Property_name"
+        b)view to component
+                 i)Event Binding - (event)="function"
+                ii)event Binding using $event - (event)="function_name($event)"
+      2)Two way data binding
+         1)ngModel  
+               -import FormsModule in appModule
+               -[(ngModel)]="property_name"
+   18 Directives - to manipulate DOM
+            1)component Directives
+            2)structural Directives-to add or remove html elements based on conditions
+
+            i)*ngIf="condition"
+            ii)*ngFor="let i of arr_name"
+
+   19 Actiavted route //class- viewContact  - to pass id to url
+        Provides access to information about a route associated with a component 
+        that is loaded in an outlet. Use to traverse the RouterState tree and 
+        extract information from nodes.
+
+   20 Angular Pipes - transforming data using pipes
+         Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions to use in template expressions to accept an input value and return a transformed value.    
+            eg:- date
+
+         create a pipe for searching
+         ng g p pipe_folder/pipe_name
+         ng g p pipes/filter   
